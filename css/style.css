@@ -1,0 +1,92 @@
+/* ==Typeface== */
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans+TC&display=swap');
+
+/* ==Components== */
+
+*, body{
+    font-family: 'Inconsolata', monospace, 'Noto Sans TC', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto; /*Make auto-scroll working*/
+    font-size: 16px;
+}
+
+/* #header, #command{
+    display: none;
+} */
+
+#command{
+    display: flex;
+}
+
+#command input#input{
+    border: none; 
+    width: 100%;
+}
+
+#command input:focus {
+    outline:none;
+    /* caret-color: transparent; */
+}
+
+table.help{
+    width: 100%;
+}
+
+table.help tr{
+    vertical-align: top;
+}
+
+table.help.help-command{
+    width: 25%;
+}
+
+table.help.help-content{
+    width: 75%;
+}
+
+/* ==Interface== */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #161616; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #111; 
+}
+
+::-moz-selection {
+    background: #888;
+}
+
+::selection {
+    background: #888;
+}
+
+/* ==Root color== */
+
+:root
+{
+    --bg-color: black;
+    --font-color: grey;
+    --input-color: white;
+    --button-font-color: white;
+    --link-color: white;
+    --link-hover-color: black;
+    --link-hover-bg-color: white;
+}
